@@ -1,27 +1,14 @@
 var chai = require('chai');
 var assert = chai.assert;
 
-/** Delete this line and the one at the bottom when you're ready for exercise 3
-
 suite('Unit Tests Exercise 3 - Truthyness', function(){
-      // 3 - Use assert.isOk() or assert.isNotOk() to make the tests pass.
-      // .isOk(truthy) and .isNotOk(falsey) will pass
       test('Is null truthy?', function(){
-        assert.fail( null, 'null is falsey');
+        assert.isNotOk(null);
       });
       test('Is a string truthy?',function(){
-        assert.fail( "I'm truthy", 'a string is truthy');
+        assert.isOk("I'm truthy");
       });
       test('Is true truthy?',function(){
-        assert.fail( true, 'true is truthy' );
+        assert.isOk(true);
       });
     });
-
-  // null, undefined, "", 0, false and NaN (not a number)
-  // are collectively referred to as 'falsy'. This means if 
-  // a property or variable is defined as this, and you check whether 
-  // that property exists, the answer will be 'no'. The opposite of
-  // 'falsy' is 'truthy'. Effectively, a 'truthy' variable or property
-  // HAS data, whereas a falsy var or prop doesn't. 
-
-// Delete this line when you're ready for exercise 3 **/
