@@ -2,10 +2,26 @@ var chai = require("chai");
 var assert = chai.assert;
 
 suite("Unit Tests Exercise 1 - The Void", function() {
+  // assert.fail() will always fail. Change it into something more useful...
+  // 1 - Use assert.isNull() or assert.isNotNull() to make the tests pass.
+  // When you're done, type `npm test` in your terminal to try the tests.
+  // If you get an error relating to mocha not being found, type `npm install`.
+  // Try not to change anything other than the `assert.fail()` in the following code.
   test("Is null null?", function() {
-    assert.isNull(null);
+    // Change the below to 'assert.isNull()' and watch the first test pass
+    assert.fail(
+      null,
+      "This is an optional error description - e.g. null is null"
+    );
   });
   test("Is 1 null?", function() {
-    assert.isNotNull(1);
+    assert.fail(1, "1 is not null");
   });
 });
+
+// null is something that you need to explicitly define a variable as being.
+// Unlike undefined, a variable or property needs to be explicitly defined as null.
+// However, it's perfectly acceptable to also define variables as empty strings,
+// arrays, objects, false or 0 depending on the context
+
+// When the tests pass, you can comment out the following exercise

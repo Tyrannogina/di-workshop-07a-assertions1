@@ -4,16 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -ui tdd test",
-    "format": "prettier --write 'test/*.js'"
+    "test": "mocha -ui tdd test"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
     "mocha": "^7.0.0"
-  },
-  "devDependencies": {
-    "prettier": "1.19.1"
   }
 }
